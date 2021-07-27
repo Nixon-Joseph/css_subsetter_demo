@@ -9,6 +9,7 @@
         }
     ],
     "require": {
-        "devpirates/templated-php-mvc": "^0.1.15"
+        "devpirates/templated-php-mvc": "^0.1.17",
+        "sabberworm/php-css-parser": "^8.3.1"
     }
 }

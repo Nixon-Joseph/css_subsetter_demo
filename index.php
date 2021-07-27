@@ -6,17 +6,17 @@
 //$start = microtime(true);
 require './vendor/autoload.php';
 //$app = new devpirates\MVC\TemplateMVCApp("./app/cache");  // enable caching
-$app = new devpirates\MVC\TemplateMVCApp();
+$app = new devpirates\MVC\TemplateMVCApp("haml", "./app/cache");
 
 $app->Autoload("./app/controllers", array("./app/models", "./app/helpers", "./app/repos"));
 
 // private creds file, sets $dbServer, $dbName, $dbUser, and $dbPass variables
 require "../private/mvc_db_creds.php";
 // configure the templated mvc app db access
-$app->Config($dbServer, $dbName, $dbUser, $dbPass);
-unset ($dbServer, $dbName, $dbUser, $dbPass); // unset variables so they can't be accessed again
+//$app->Config($dbServer, $dbName, $dbUser, $dbPass);
+//unset ($dbServer, $dbName, $dbUser, $dbPass); // unset variables so they can't be accessed again
 // configure the templated mvc app without db access
-//$app->ConfigSession();
+$app->ConfigSession();
 
 
 require "./app/classes/Constants.php";

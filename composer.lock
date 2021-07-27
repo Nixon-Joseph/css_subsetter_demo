@@ -4,26 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7addd8cc6f0dc244a10b2fe034473ddb",
+    "content-hash": "bfa7b80a00ea80890f8a54bf96bbfd20",
     "packages": [
         {
             "name": "devpirates/templated-php-mvc",
-            "version": "0.1.15",
+            "version": "0.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nixon-Joseph/TemplatedPHPMVC.git",
-                "reference": "7311dbdd11bc46ee8ecea9d2dd7bce9aa750d76e"
+                "reference": "1125d1ae6d2c22e7bf2d7f28e7d4ea868623d859"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nixon-Joseph/TemplatedPHPMVC/zipball/7311dbdd11bc46ee8ecea9d2dd7bce9aa750d76e",
-                "reference": "7311dbdd11bc46ee8ecea9d2dd7bce9aa750d76e",
+                "url": "https://api.github.com/repos/Nixon-Joseph/TemplatedPHPMVC/zipball/1125d1ae6d2c22e7bf2d7f28e7d4ea868623d859",
+                "reference": "1125d1ae6d2c22e7bf2d7f28e7d4ea868623d859",
                 "shasum": ""
             },
             "require": {
                 "liquid/liquid": "^1.4",
                 "netresearch/jsonmapper": "^4.0",
-                "pelago/emogrifier": "^5.0"
+                "pelago/emogrifier": "^5.0",
+                "zaininnari/html-minifier": "^0.4.2"
             },
             "type": "library",
             "autoload": {
@@ -49,22 +50,22 @@
             "description": "Library to help people quickly build and maintain an mvc project in php with lots of helpful built in tools and utilities",
             "support": {
                 "issues": "https://github.com/Nixon-Joseph/TemplatedPHPMVC/issues",
-                "source": "https://github.com/Nixon-Joseph/TemplatedPHPMVC/tree/0.1.15"
+                "source": "https://github.com/Nixon-Joseph/TemplatedPHPMVC/tree/0.1.17"
             },
-            "time": "2021-03-30T01:38:28+00:00"
+            "time": "2021-07-25T14:12:54+00:00"
         },
         {
             "name": "liquid/liquid",
-            "version": "1.4.22",
+            "version": "1.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kalimatas/php-liquid.git",
-                "reference": "d3e9c3de5b8a17840af2a29ac39cfe3afac55282"
+                "reference": "4f5ae8de96031e2985a900427f2d508cf556c100"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kalimatas/php-liquid/zipball/d3e9c3de5b8a17840af2a29ac39cfe3afac55282",
-                "reference": "d3e9c3de5b8a17840af2a29ac39cfe3afac55282",
+                "url": "https://api.github.com/repos/kalimatas/php-liquid/zipball/4f5ae8de96031e2985a900427f2d508cf556c100",
+                "reference": "4f5ae8de96031e2985a900427f2d508cf556c100",
                 "shasum": ""
             },
             "require": {
@@ -118,9 +119,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kalimatas/php-liquid/issues",
-                "source": "https://github.com/kalimatas/php-liquid/tree/1.4.22"
+                "source": "https://github.com/kalimatas/php-liquid/tree/1.4.23"
             },
-            "time": "2021-01-22T14:14:26+00:00"
+            "time": "2021-06-25T06:02:16+00:00"
         },
         {
             "name": "netresearch/jsonmapper",
@@ -175,16 +176,16 @@
         },
         {
             "name": "pelago/emogrifier",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MyIntervals/emogrifier.git",
-                "reference": "b43b650880d189b0ada61d95d0729c7424b1752d"
+                "reference": "37595a9bb62c3c25969bdd9e8d7dd24c3ac62bc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/b43b650880d189b0ada61d95d0729c7424b1752d",
-                "reference": "b43b650880d189b0ada61d95d0729c7424b1752d",
+                "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/37595a9bb62c3c25969bdd9e8d7dd24c3ac62bc9",
+                "reference": "37595a9bb62c3c25969bdd9e8d7dd24c3ac62bc9",
                 "shasum": ""
             },
             "require": {
@@ -195,13 +196,14 @@
             },
             "require-dev": {
                 "php-parallel-lint/php-parallel-lint": "^1.2.0",
+                "rawr/cross-data-providers": "^2.3.0",
                 "slevomat/coding-standard": "^6.4.1",
                 "squizlabs/php_codesniffer": "^3.5.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0.x-dev"
+                    "dev-main": "6.0.x-dev"
                 }
             },
             "autoload": {
@@ -248,24 +250,74 @@
                 "issues": "https://github.com/MyIntervals/emogrifier/issues",
                 "source": "https://github.com/MyIntervals/emogrifier"
             },
-            "time": "2020-11-23T18:37:25+00:00"
+            "time": "2021-04-06T08:18:22+00:00"
         },
         {
-            "name": "symfony/css-selector",
-            "version": "v5.2.4",
+            "name": "sabberworm/php-css-parser",
+            "version": "8.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "f65f217b3314504a1ec99c2d6ef69016bb13490f"
+                "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
+                "reference": "d217848e1396ef962fb1997cf3e2421acba7f796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/f65f217b3314504a1ec99c2d6ef69016bb13490f",
-                "reference": "f65f217b3314504a1ec99c2d6ef69016bb13490f",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/d217848e1396ef962fb1997cf3e2421acba7f796",
+                "reference": "d217848e1396ef962fb1997cf3e2421acba7f796",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5"
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "codacy/coverage": "^1.4",
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sabberworm\\CSS": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Schweikert"
+                }
+            ],
+            "description": "Parser for CSS Files written in PHP",
+            "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "keywords": [
+                "css",
+                "parser",
+                "stylesheet"
+            ],
+            "support": {
+                "issues": "https://github.com/sabberworm/PHP-CSS-Parser/issues",
+                "source": "https://github.com/sabberworm/PHP-CSS-Parser/tree/8.3.1"
+            },
+            "time": "2020-06-01T09:10:00+00:00"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v5.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "7fb120adc7f600a59027775b224c13a33530dd90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/7fb120adc7f600a59027775b224c13a33530dd90",
+                "reference": "7fb120adc7f600a59027775b224c13a33530dd90",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.16"
             },
             "type": "library",
             "autoload": {
@@ -297,7 +349,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v5.2.4"
+                "source": "https://github.com/symfony/css-selector/tree/v5.3.4"
             },
             "funding": [
                 {
@@ -313,7 +365,145 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T10:01:46+00:00"
+            "time": "2021-07-21T12:38:00+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/eca0bf41ed421bed1b57c4958bab16aa86b757d0",
+                "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-19T12:13:01+00:00"
+        },
+        {
+            "name": "zaininnari/html-minifier",
+            "version": "0.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zaininnari/html-minifier.git",
+                "reference": "5b94d85705626f9bb33b7c667bc4400088ed4ece"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zaininnari/html-minifier/zipball/5b94d85705626f9bb33b7c667bc4400088ed4ece",
+                "reference": "5b94d85705626f9bb33b7c667bc4400088ed4ece",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "zz": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "The BSD 3-Clause License"
+            ],
+            "authors": [
+                {
+                    "name": "Google inc",
+                    "homepage": "http://www.chromium.org/blink",
+                    "role": "Author"
+                },
+                {
+                    "name": "zaininnari",
+                    "homepage": "https://github.com/zaininnari/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The Blink HTMLTokenizer ported to PHP.",
+            "homepage": "https://github.com/zaininnari/html-minifier",
+            "keywords": [
+                "Blink",
+                "HTML minify",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/zaininnari/html-minifier/issues",
+                "source": "https://github.com/zaininnari/html-minifier/tree/travis"
+            },
+            "time": "2015-08-18T14:10:55+00:00"
         }
     ],
     "packages-dev": [],
@@ -324,5 +514,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
