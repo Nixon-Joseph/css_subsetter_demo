@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        {% include 'shared/_headerLinksAndScripts.haml' %}
+    </head>
+
+    <body>
+        <div class="container">
+            {% include 'shared/_header.haml' %}
+        </div>
+        <main role="main" class="container">
+            {{ content }}
+        </main>
+        
+        {% include 'shared/_footer.haml' %}
+
+        {% include 'shared/_footerLinksAndScripts.haml' %}
+    </body>
+</html>

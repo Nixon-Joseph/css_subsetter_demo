@@ -1,0 +1,39 @@
+<!-- INCLUDE:shared/_header.dat -->
+
+<link rel="stylesheet" href="/public/styles/account/main.css">
+
+<h2 class="text-muted">#<!-- MODEL:Username --></h2>
+<div class="row">
+    <div class="col-3">
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action cursor-pointer text-console bg-dark active" href="#GamesContent" role="tab" data-toggle="list" data-section="games"><i class="fas fa-gamepad mr-2 fa-fw"></i> Games</a>
+            <a class="list-group-item list-group-item-action cursor-pointer text-console bg-dark" href="#FriendsContent" role="tab" data-toggle="list" data-section="friends"><i class="fas fa-user-friends mr-2 fa-fw"></i> Friends</a>
+            <a class="list-group-item list-group-item-action cursor-pointer text-console bg-dark" href="#FavoritesContent" role="tab" data-toggle="list" data-section="favorites"><i class="fas fa-star mr-2 fa-fw"></i> Favorites</a>
+            <a class="list-group-item list-group-item-action cursor-pointer text-console bg-dark mt-3" href="#SettingsContent" role="tab" data-toggle="list" data-section="settings"><i class="fas fa-cogs mr-2 fa-fw"></i> Settings</a>
+            <a class="list-group-item list-group-item-action cursor-pointer text-console bg-dark" href="/account/logout"><i class="fas fa-sign-out-alt mr-2 fa-fw"></i> Log out</a>
+        </div>
+    </div>
+    <div class="col-9" id="AccountContent">
+        <div class="tab-content">
+            <div id="GamesContent" class="tab-pane fade show active" role="tabpanel">Games</div>
+            <div id="FriendsContent" class="tab-pane fade" role="tabpanel">Friends</div>
+            <div id="FavoritesContent" class="tab-pane fade" role="tabpanel">Favorites</div>
+            <div id="SettingsContent" class="tab-pane fade" role="tabpanel">
+                <h3>User Info</h3>
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum ipsa quasi odit consequatur vel, dolor ullam sunt quam rem aperiam recusandae qui necessitatibus iusto nulla tempora esse corrupti laboriosam.
+                    </div>
+                    <div id="Enabled2FA" data-should-show="<!-- MODEL:Enabled2FA -->">
+                        <p>2 Factor Authentication enabled for your account.</p>
+                        <p>Click <a class="text-console-secondary" href="#" id="Disable2FALink">here</a> to disable 2 Factor Authentication.</p>
+                    </div>
+                    <div id="Disabled2FA" data-should-hide="<!-- MODEL:Enabled2FA -->">
+                        <p>2 Factor Authentication is available for your account.</p>
+                        <p>Click <a class="text-console-secondary" href="#" id="Enable2FALink">here</a> to enable 2 Factor Authentication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<style>
+    #PasswordInputPlain {
+        border-top-left-radius: 0.25rem; 
+        border-bottom-left-radius: 0.25rem;
+    }
+</style>
+
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark mx-auto">
+            <div class="card-body">
+                <div class="form">
+                    <div class="form-group">
+                        <label for="EmailAddress">Confirm Email Address</label>
+                        <input type="email" id="EmailAddress" class="form-control create-form-input" />
+                        <div class="invalid-feedback">Valid email is required</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Username">Username</label>
+                        <input type="text" id="Username" class="form-control create-form-input" />
+                        <div class="invalid-feedback">Username is required, and must only contain alpha-numeric characters</div>
+                        <span class="text-muted">Your username will be publicly visible</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="PasswordInput" id="NewPasswordLabel">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control create-form-input password-input" id="PasswordInput" />
+                            <input type="text" class="form-control create-form-input password-input ml-0" id="PasswordInputPlain" style="display: none;" />
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" id="PasswordVisibilityToggle" type="button"><i class="fas fa-fw fa-eye"></i></button>
+                            </div>
+                            <div class="invalid-feedback">Password is required</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary btn-outline btn-block text-console" data-registration-code="<!-- MODEL:Code -->" id="RegisterButton">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{
+    "name": "devpires/templated-php-mvc-demo",
+    "description": "Demo project for TemplatedPHPMVC library",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Joseph Nixon",
+            "email": "nieminen432@gmail.com"
+        }
+    ],
+    "require": {
+        "devpirates/templated-php-mvc": "^0.1.15"
+    }
+}
